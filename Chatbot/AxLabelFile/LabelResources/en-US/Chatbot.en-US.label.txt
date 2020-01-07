@@ -1,0 +1,6 @@
+﻿NewLabel0=Label files created on 11/11/2019 01:45:21 for label file Id Chatbot and language en-US
+ ;Label file comment - see above label
+URL=Chatbot URL
+URLHelp=Chatbot URL containing the secret key
+Chatbot=Chatbot
+SetupChatbot=Set up chatbot

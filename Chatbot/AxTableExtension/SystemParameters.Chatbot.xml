@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxTableExtension xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>SystemParameters.Chatbot</Name>
+	<FieldGroupExtensions />
+	<FieldGroups>
+		<AxTableFieldGroup>
+			<Name>Chatbot</Name>
+			<Label>@Chatbot:Chatbot</Label>
+			<Fields>
+				<AxTableFieldGroupField>
+					<DataField>ChatbotURL</DataField>
+				</AxTableFieldGroupField>
+			</Fields>
+		</AxTableFieldGroup>
+	</FieldGroups>
+	<FieldModifications />
+	<Fields>
+		<AxTableField xmlns=""
+			i:type="AxTableFieldString">
+			<Name>ChatbotURL</Name>
+			<AssetClassification>Customer Content</AssetClassification>
+			<ExtendedDataType>URL</ExtendedDataType>
+			<HelpText>@Chatbot:URLHelp</HelpText>
+			<Label>@Chatbot:URL</Label>
+		</AxTableField>
+	</Fields>
+	<FullTextIndexes />
+	<Indexes />
+	<Mappings />
+	<PropertyModifications />
+	<RelationExtensions />
+	<RelationModifications />
+	<Relations />
+</AxTableExtension>

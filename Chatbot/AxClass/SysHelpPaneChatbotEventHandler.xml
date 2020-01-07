@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+	<Name>SysHelpPaneChatbotEventHandler</Name>
+	<SourceCode>
+		<Declaration><![CDATA[
+class SysHelpPaneChatbotEventHandler
+{
+}
+]]></Declaration>
+		<Methods>
+			<Method>
+				<Name>SysHelpPane_OnInitialized</Name>
+				<Source><![CDATA[
+    [FormEventHandler(formStr(SysHelpPane), FormEventType::Initialized)]
+    public static void SysHelpPane_OnInitialized(xFormRun sender, FormEventArgs e)
+    {
+        FormRun         formRun = sender as FormRun;
+        FormControl     chatbotTabPageFormControl = formRun.design().controlName(formControlStr(SysHelpPane, ChatbotTabPage));
+        URL             chatbotUrl = SystemParameters::find().ChatbotURL;
+
+        if (chatbotUrl)
+        {
+            WebsiteHostControl	websiteHost	= formRun.design().controlName(formControlStr(SysHelpPane, ChatbotHostControl));            
+            websiteHost.url(chatbotUrl);
+            chatbotTabPageFormControl.visible(true);
+        }
+        else
+        {
+            chatbotTabPageFormControl.visible(false);
+        }
+ 
+    }
+
+]]></Source>
+			</Method>
+		</Methods>
+	</SourceCode>
+</AxClass>
